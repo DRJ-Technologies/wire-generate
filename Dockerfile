@@ -5,7 +5,7 @@ FROM golang:latest
 WORKDIR /app
 
 # Download and install Google Wire
-RUN go install github.com/google/wire/cmd/wire
+RUN go install github.com/google/wire/cmd/wire@latest
 
 # Install jq
 RUN apt-get update && apt-get install -y jq
