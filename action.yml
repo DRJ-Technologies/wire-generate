@@ -1,0 +1,12 @@
+name: "Wire Generate"
+description: "Generate Wire file for a given list of directories"
+inputs:
+  directories: # id of input
+    description: "Directories to run Wire on"
+    required: true
+outputs: {}
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.directories }}
