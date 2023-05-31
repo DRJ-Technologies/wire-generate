@@ -1,5 +1,4 @@
-# Start from the latest golang base image
-FROM golang:latest
+FROM golang:1.17
 
 # Download and install Google Wire
 RUN go install github.com/google/wire/cmd/wire@latest
