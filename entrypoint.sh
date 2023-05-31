@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Assuming directories are passed as command line arguments
-for dir in "$@"; do
+# Read the directories JSON array from the input and convert it to a list
+directories=$(echo "$1" | jq -r '.[]')
+
+# Iterate over the directories
+for dir in $directories; do
     if [ -d "${dir}" ]; then
         echo "Running wire on ${dir}"
         wire ${dir}/...

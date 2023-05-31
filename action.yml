@@ -9,7 +9,7 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.directories }}
+    - ${{ toJSON(inputs.directories) }}
 branding:
   icon: 'activity'
   color: 'purple'
