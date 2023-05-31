@@ -37,7 +37,7 @@ steps:
     uses: actions/checkout@v2
 
   - name: Wire Generate
-    uses: your-repo/wire-generate-action@v1
+    uses: DRJ-Technologies/wire-generate@v1
     with:
       directories: "./dir1 ./dir2 ./dir3"
 ```
