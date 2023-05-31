@@ -39,7 +39,7 @@ steps:
   - name: Wire Generate
     uses: DRJ-Technologies/wire-generate@v1
     with:
-      directories: "./dir1 ./dir2 ./dir3"
+      directory: "hello-world"
 ```
 
 In this example, Wire will be run in dir1, dir2, and dir3 of your repository. Make sure to replace your-repo with the actual repository containing the action.
